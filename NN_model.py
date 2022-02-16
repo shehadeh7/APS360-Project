@@ -1,5 +1,6 @@
 import tensorflow as tf
 import neural_structured_learning as nsl
+import matplotlib.pyplot as plt
 
 '''
 If running in google colab, make sure you run this command first:
@@ -8,9 +9,15 @@ If running in google colab, make sure you run this command first:
 
 '''
 
+# Check sure tensorflow 2.0
+print("TensorFlow version:", tf.__version__)
+
 # Prepare data.
-(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
+(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data(path='./mnist.npz')
 x_train, x_test = x_train / 255.0, x_test / 255.0
+
+# plot an image
+plt.imshow(x_train[0])
 
 # Create a base model -- sequential, functional, or subclass.
 model = tf.keras.Sequential([
