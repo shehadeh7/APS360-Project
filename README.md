@@ -1,7 +1,6 @@
-# APS360-Project
-Repo used for APS360 project
+# APS360 - Speech Emotion Recognition Project
 
-# Progress Tracking
+## Progress Tracking
 
 | Task                            | Description                                                                         | Team Member       | Internal Deadline | Completed?  |
 |---------------------------------|-------------------------------------------------------------------------------------|-------------------|-------------------|-------------|
@@ -16,6 +15,13 @@ Repo used for APS360 project
 | Finalize Model                  | Based on all gathered findings, finalize the model before proceeding with test data | ALL               | Mar 30            |             |
 | Project Presentation            | Prepare slides and demo                                                             | ALL               | April 06          |             |
 | Final Deliverable               | Prepare final report and summarize findings                                         | ALL               | April 13          |             |
+
+## Result Tracking
+
+|            | Test Accuracy |
+|------------|---------------|
+| Baseline   | 53.53%        |
+| Initial NN | 64.11%        |
 
 ### Useful resources
 NSL with keras: <a href="https://www.tensorflow.org/neural_structured_learning">tensorflow NSL </a> <br>
